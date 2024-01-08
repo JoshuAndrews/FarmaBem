@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+main{
+    background-color: #f8f8f8;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+    background-color: #ffffff;
+    width: 100vw;
+}
+header img{
+    width: 7em;
+}
+nav ul{
+    display: flex;
+    list-style: none;  
+}
+nav ul li{
+    margin: 0em 2em;
+    font-weight: 500;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000000;
+}
+#logo-img {
+    transition: width 0.3s;
+}
+.p-principal{
+    width: 100vw;
+    height: 100vh;
+    margin-bottom: 2em;
+    background-image: url(assets/Img/zyro-image.jpg);
+    background-position: right top;
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 0em 0em 5em 5em;
+}
+.p-principalConteudo{
+    width: 25%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 4em;
+}
+.p-principalConteudo h1{
+    color: #ffffff;
+    font-weight: 400;
+    text-shadow: 1px 1px 1px #00000031;
+    margin-bottom: 1.5em;
+}
+.farmaciaNome{
+    color: #1B6B93;
+    font-size: 1.2em;
+}
+.p-btnContato{
+    width: 100%;
+    padding: 1em;
+    background-color: #29A71A;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #0000003d;
+}
+.p-btnContato img{
+    width: 2.3em;
+}
+.p-sobre{
+    width: 100vw;
+    height: 100vh;
+    margin-bottom: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.p-sobreTitulo{
+    text-align: center;
+    margin-bottom: 5em;
+}
+.p-sobreTitulo h1{
+    color: #1C1C1C;
+    font-size: 2em;
+}
+.p-sobreTitulo p{
+    color: #393939;
+    font-size: 1.2em;
+}
+.p-sobreConteudo{
+    display: flex;
+    text-align: left;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.p-sobreEsq{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+}
+.p-sobreDir{
+    width: 35%;
+}
+.p-sobreDir p{
+    margin-bottom: 1em;
+    color: #434343;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+.p-sobreEsq img{
+    width: 100%;
+    filter: drop-shadow(2px 2px 5px #0000005b);
+}
+
+.p-servicos{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10em;
+}
+.p-servicoTitulo{
+    text-align: center;
+    width: 35em;
+    margin: 3em auto;
+}
+.p-servicoTitulo h1{
+    color: #1C1C1C;
+    font-size: 2em;
+}
+.p-servicoTitulo p{
+    color: #393939;
+    font-size: 1.2em;
+}
+.p-servicoCont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.p-servicoIcon {
+    width: 20em;
+    margin: 2em 2em;
+    background-color: #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5em 2em;
+}
+.p-servicoIcon img{
+    width: 8em;
+}
+.p-servicoIcon p{
+    color: #000000;
+    font-weight: 500;
+    font-size: 1.3em;
+}
+.p-localizacao{
+    height: 100vh;
+}
+.p-localizacao iframe{
+    width: 100vw;
+    height: 50vh;
+    border: 0;
+    z-index: -1;
+}   
+.p-contato{
+    background-color: #16516F;
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.p-contatoLogo{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+.p-contatoLogo img{
+    width: 20em;
+}
+
+.p-contatoCont{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
+    color: #F4F4F4;
+}
+
+.p-contatoCont img{
+    width: 1.5em;
+}
+.p-contatoInf{
+    width: 20em;
+}
+.p-contatoInf h1{
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+.p-contatoInf p{
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    display: flex;
+    align-items: center;
+}
+.p-contatoInf p img{
+    margin-right: 10px;
+}
