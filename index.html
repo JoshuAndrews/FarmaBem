@@ -6,9 +6,11 @@
     <title>FarmaBem</title>
     <link rel="shortcut icon" href="assets/Icone/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
 </head>
 <body>
-    <header>
+    <header class="desktop">
         <div>
             <a href="#p-principali" id="logo-link"><img src="assets/Icone/logo farmacia.png" alt="Logo FarmaBem" id="logo-img"></a>
         </div>
@@ -21,6 +23,28 @@
             </ul>
         </nav>
     </header>
+
+    <header class="mobile">
+        <div>
+            <a href="#p-principali" id="logo-link"><img src="assets/Icone/logo farmacia.png" alt="Logo FarmaBem" id="logo-img"></a>
+        </div>
+        <div>
+            <span class="material-symbols-outlined">menu</span>
+        </div>
+        
+    </header>
+    <div class="sideMenu">
+        <nav>
+            <ul>
+                <li><a href="#p-sobrei">Sobre</a></li>
+                <li><a href="#p-servicoi">Serviços</a></li>
+                <li><a href="#p-localizacaoi">Localização</a></li>
+                <li><a href="#p-contatoi">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+
     <main>
         <section class="p-principal" id="p-principali">
             <div class="p-principalConteudo">
@@ -138,7 +162,6 @@
     </main>
     <script src="Script.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/17.1.0/lazyload.min.js"></script>
 
 </body>
 </html>

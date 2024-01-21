@@ -4,7 +4,7 @@ document.addEventListener("scroll", function() {
     var scrollY = window.scrollY;
 
     if (scrollY > 50) {
-        logoImg.style.width = "80px";
+        logoImg.style.width = "50px";
     } else {
         logoImg.style.width = "120px";
     }
@@ -44,3 +44,6 @@ document.addEventListener('DOMContentLoaded', function () {
     sr.reveal('#p-localizacaoi', { origin: 'top', distance: '50px' });
     sr.reveal('#p-contatoi', { origin: 'bottom', distance: '50px' });
 });
+
+
+

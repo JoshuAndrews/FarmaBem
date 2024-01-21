@@ -9,7 +9,10 @@
 main{
     background-color: #f8f8f8;
 }
-header{
+.mobile{
+    display: none;
+}
+.desktop{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -20,24 +23,25 @@ header{
     position: fixed;
     z-index: 1000;
 }
-header img{
+.desktop > img{
     width: 7em;
 }
-nav ul{
+.desktop nav ul{
     display: flex;
     list-style: none;  
 }
-nav ul li{
+.desktop nav ul li{
     margin: 0em 2em;
     font-weight: 500;
 }
-nav ul li a{
+.desktop nav ul li a{
     text-decoration: none;
     color: #000000;
 }
 #logo-img {
     transition: width 0.3s;
 }
+
 .p-principal{
     width: 100%;
     height: 100vh;
@@ -224,4 +228,26 @@ nav ul li a{
 }
 .p-contatoInf p img{
     margin-right: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1em;
+        background-color: #fafafa;
+        width: 100%;
+    }
+    .mobile img{
+        width: 7em;
+    }
+    .sideMenu{
+        background-color: #43434360;
+        height: 150px
+    }
 }
