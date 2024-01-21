@@ -13,14 +13,40 @@ document.addEventListener("scroll", function() {
 document.addEventListener('DOMContentLoaded', function () {
     
     window.sr = ScrollReveal({
-        reset: true, 
+        reset: false, 
         duration: 800, 
         scale: 0.9, 
     });
 
-
     sr.reveal('#p-sobrei', { origin: 'left', distance: '50px' });
+    ScrollReveal().reveal('.p-sobreEsq', {
+        duration: 1000, 
+        origin: 'left', 
+        distance: '20px', 
+        easing: 'ease-out', 
+        interval: 200 
+    });
+    ScrollReveal().reveal('.p-sobreDir', {
+        duration: 1000, 
+        origin: 'right', 
+        distance: '20px', 
+        easing: 'ease-out', 
+        interval: 200 
+    });
     sr.reveal('#p-servicoi', { origin: 'right', distance: '50px' });
-    sr.reveal('#p-localizacaoi', { origin: 'botton', distance: '50px' });
-    sr.reveal('#p-contatoi', { origin: 'botton', distance: '50px' });
+    ScrollReveal().reveal('.p-servicoIcon', {
+        duration: 700, 
+        origin: 'bottom', 
+        distance: '20px', 
+        easing: 'ease-out', 
+        interval: 100 
+    });
+    sr.reveal('#p-localizacaoi', { origin: 'top', distance: '50px' });
+    sr.reveal('#p-contatoi', { origin: 'bottom', distance: '50px' });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    var lazyLoadInstance = new LazyLoad({
+        elements_selector: ".lazy", 
+    });
 });
