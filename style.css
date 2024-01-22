@@ -27,6 +27,9 @@ main{
     position: fixed;
     z-index: 1000;
 }
+#logo-link{
+    width: 120px;
+}
 .desktop > img{
     width: 7em;
 }
@@ -334,14 +337,14 @@ main{
     }
     .p-servicoIcon {
         text-align: center;
-        width: 35%;
+        width: 32%;
         height: 10em;
         padding: 2em;
         box-sizing: border-box;
         margin-bottom: 20px;
     }
     .p-servicoIcon p{
-        font-size: 1em;
+        font-size: 0.8em;
     }
     .p-servicoIcon img{
         width: 2em;

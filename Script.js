@@ -1,17 +1,7 @@
-document.addEventListener("scroll", function() {
-    var logoImg = document.getElementById("logo-img");
-    var logoLink = document.getElementById("logo-link");
-    var scrollY = window.scrollY;
-
-    if (scrollY > 50) {
-        logoImg.style.width = "80px";
-    } else {
-        logoImg.style.width = "120px";
-    }
-});
-
-
 document.addEventListener('DOMContentLoaded', function() {
+    var logoImg = document.getElementById("logo-img");
+    logoImg.style.width = "120px";
+
     var menu = document.getElementById('menu');
     var sideMenuDiv = document.getElementById('sideMenuDiv');
     var menuLinks = document.querySelectorAll('.menu-link');
@@ -85,4 +75,17 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     sr.reveal('#p-localizacaoi', { origin: 'top', distance: '50px' });
     sr.reveal('#p-contatoi', { origin: 'bottom', distance: '50px' });
+});
+
+
+document.addEventListener("scroll", function() {
+    var logoImg = document.getElementById("logo-img");
+    var logoLink = document.getElementById("logo-link");
+    var scrollY = window.scrollY;
+
+    if (scrollY > 50) {
+        logoImg.style.width = "80px";
+    } else {
+        logoImg.style.width = "120px";
+    }
 });
