@@ -245,23 +245,23 @@ main{
         padding: 1em;
         background-color: #fafafa;
         width: 100%;
+        z-index: 1000;
     }
     .mobile img{
-        width: 7em;
+        width: 4em;
     }
     .btnMenu > button{
         border: none;
         background-color: transparent;
     }
     .sideMenu{
-        
         background-color: #434343a1;
         padding-top: 1em;
         height: 10em;
         width: 70%;
         line-height: 2em;
         position: fixed;
-        right: -300px;
+        right: -500px;
         box-shadow: -5px 5px 5px #0000001e;
         transition: right 0.5s  ease;
     }
@@ -285,32 +285,43 @@ main{
     }
     .aberto{
         right: 0;
-
     }
     .p-principal{
+        background-position: 75%;
         border-radius: 0px;
     }
     .p-principalConteudo{
         width: 80%;
     }
     .p-principalConteudo h1{
-        padding-bottom: 10em;
+        padding-bottom: 2em;
     }
     .farmaciaNome{
         color: #51b3e4;
         font-size: 1.2em;
     }
+    .p-sobre{
+        padding: 2em 1em;
+        height: 100%;
+        display: flex;
+        margin-bottom: 5em;
+    }
     .p-sobreConteudo{
         flex-direction: column;
     }
     .p-sobreEsq{
-        width: 40%;
+        width: 70%;
         display: flex;
         justify-content: center;
         margin-bottom: 5em;
     }
     .p-sobreDir{
         width: 90%;
+    }
+    .p-servicoTitulo{
+        text-align: center;
+        width: 90%;
+        margin: 3em auto;
     }
     .p-servicoIcon {
         width: 10em;
@@ -326,10 +337,14 @@ main{
         width: 4em;
     }
     .p-servicoTitulo h1{
-        font-size: 1.5em;
+        font-size: 2em;
+        margin-bottom: 0.5em;
     }
     .p-servicoTitulo p{
-        font-size: 1em;
+        font-size: 1.2em;
+    }
+    .p-servicos{
+        margin-bottom: 2em;
     }
     .p-localizacao iframe{
         width: 100%;

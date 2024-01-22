@@ -48,11 +48,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 document.addEventListener('DOMContentLoaded', function(){
-    var sideMenuDiv = document.getElementById('sideMenuDiv');
     var menu = document.getElementById('menu');
+    var menuLinks = document.querySelectorAll('.menu-link');
 
     menu.addEventListener('click', function(){
+        var sideMenuDiv = document.getElementById('sideMenuDiv');
         sideMenuDiv.classList.toggle('aberto');
+    });
+
+    menuLinks.forEach(function(link){
+        link.addEventListener('click', function(){
+            var sideMenuDiv = document.getElementById('sideMenuDiv');
+            sideMenuDiv.classList.remove('aberto');
+        })
     })
 
 })
