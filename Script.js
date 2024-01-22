@@ -3,6 +3,7 @@ document.addEventListener("scroll", function() {
     var logoLink = document.getElementById("logo-link");
     var scrollY = window.scrollY;
 
+    //logoImg.style.width = "120px";
     if (scrollY > 50) {
         logoImg.style.width = "80px";
     } else {
@@ -44,3 +45,14 @@ document.addEventListener('DOMContentLoaded', function () {
     sr.reveal('#p-localizacaoi', { origin: 'top', distance: '50px' });
     sr.reveal('#p-contatoi', { origin: 'bottom', distance: '50px' });
 });
+
+
+document.addEventListener('DOMContentLoaded', function(){
+    var sideMenuDiv = document.getElementById('sideMenuDiv');
+    var menu = document.getElementById('menu');
+
+    menu.addEventListener('click', function(){
+        sideMenuDiv.classList.toggle('aberto');
+    })
+
+})
