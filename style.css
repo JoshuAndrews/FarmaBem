@@ -89,6 +89,11 @@ main{
     border-radius: 10px;
     box-shadow: 2px 2px 2px #0000003d;
 }
+.p-btnContato:hover{
+    background-color: #249617;
+    transition: 0.5s all ease-in-out;
+    box-shadow: 4px 4px 6px #0000003d;
+}
 .p-btnContato img{
     width: 2.3em;
 }
