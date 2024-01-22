@@ -62,5 +62,10 @@ document.addEventListener('DOMContentLoaded', function(){
             sideMenuDiv.classList.remove('aberto');
         })
     })
+    window.addEventListener('scroll', function() {
+        if (sideMenuDiv.classList.contains('aberto')) {
+          sideMenuDiv.classList.remove('aberto');
+        }
+      });
 
 })
