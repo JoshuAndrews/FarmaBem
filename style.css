@@ -9,6 +9,7 @@
 body{
     max-width: 1920px;
     user-select: none;
+    margin:auto auto
 }
 main{
     background-color: #f8f8f8;
